@@ -4,12 +4,12 @@
   "numFailedTestSuites": 0,
   "numPendingTestSuites": 0,
   "numTotalTests": 2,
-  "numPassedTests": 1,
-  "numFailedTests": 1,
+  "numPassedTests": 2,
+  "numFailedTests": 0,
   "numPendingTests": 0,
   "numTodoTests": 0,
-  "startTime": 1680028512165,
-  "success": false,
+  "startTime": 1680030663972,
+  "success": true,
   "testResults": [
     {
       "assertionResults": [
@@ -21,7 +21,7 @@
           "fullName": " MainContent should render a button",
           "status": "passed",
           "title": "should render a button",
-          "duration": 55,
+          "duration": 65,
           "failureMessages": []
         },
         {
@@ -30,21 +30,15 @@
             "MainContent"
           ],
           "fullName": " MainContent should show the help area after clicking the button",
-          "status": "failed",
+          "status": "passed",
           "title": "should show the help area after clicking the button",
-          "duration": 44,
-          "failureMessages": [
-            "expect(element).not.toBeInTheDocument()\n\nexpected document not to contain element, found <section\n  data-testid=\"help-area\"\n  id=\"help-area\"\n>\n  <article\n    class=\"help-box\"\n  >\n    <h2>\n      What is Git?\n    </h2>\n    <p>\n      Git is a version control system, helping you to manage your code and create code snapshots.\n    </p>\n  </article>\n  <article\n    class=\"help-box\"\n  >\n    <h2>\n      What is GitHub?\n    </h2>\n    <p>\n      GitHub is a company and online offering, providing you with tons of Git-related services (e.g., cloud repositories).\n    </p>\n  </article>\n  <article\n    class=\"help-box\"\n  >\n    <h2>\n      What is GitHub Actions?\n    </h2>\n    <p>\n      GitHub Actions is an automation service (or CI / CD service) that helps you automate repository-related workflows and processes.\n    </p>\n  </article>\n</section> instead"
-          ],
-          "location": {
-            "line": 29,
-            "column": 71
-          }
+          "duration": 41,
+          "failureMessages": []
         }
       ],
-      "startTime": 1680028515212,
-      "endTime": 1680028515311,
-      "status": "failed",
+      "startTime": 1680030666885,
+      "endTime": 1680030666991,
+      "status": "passed",
       "message": "",
       "name": "/Users/JMateen/Desktop/lib/Digital-Crafts/Github Actions/Github-Actions-Condition/src/components/MainContent.test.jsx"
     }
