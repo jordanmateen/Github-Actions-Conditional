@@ -2,10 +2,10 @@ name: Matrix Demo
 on: push
 jobs:
   build:
-    # strategy:
-    #   matrix:
-    #     node-version: [12, 14, 16],
-    #     operating-system: [ubuntu-latest, windows-latest]
+    strategy:
+      matrix:
+        node-version: [12, 14, 16],
+        operating-system: [ubuntu-latest, windows-latest]
     runs-on: ubuntu-latest # ${{ matrix.operating-system }}
     steps:
       - name: Get Code
