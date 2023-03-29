@@ -1,5 +1,15 @@
 name: Matrix Demo
 on: push
+jobs:
+  example_matrix:
+    strategy:
+    matrix:
+      version: [10, 12, 14]
+  runs-on: ubuntu-latest
+  steps:
+    - uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.version }}
 # jobs:
 #   build:
 #     strategy:
@@ -18,16 +28,3 @@ on: push
 #         run: npm ci
 #       - name: Build Project
 #         run: npm run build
-      
-
-
-jobs:
-  example_matrix:
-    strategy:
-    matrix:
-      version: [10, 12, 14]
-  runs-on: ubuntu-latest
-  steps:
-    - uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.version }}
